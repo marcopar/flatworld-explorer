@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="${jnlp.codebase}" href="launch.jnlp">
+    <information>
+        <title>${APPLICATION.TITLE}</title>
+        <vendor>${APPLICATION.VENDOR}</vendor>
+        <description>${APPLICATION.DESC}</description>
+        <description kind="short">${APPLICATION.DESC.SHORT}</description>
+        <homepage href="${APPLICATION.HOMEPAGE}"/>
+<!--${JNLP.ICONS}-->
+<!--${JNLP.OFFLINE.ALLOWED}-->
+        <shortcut online="false">
+          <desktop/>
+          <menu submenu="Flatworld Explorer"/>
+        </shortcut>
+    </information>
+<!--${JNLP.SECURITY}-->
+    <resources>
+<!--${JNLP.RESOURCES.RUNTIME}-->
+<!--${JNLP.RESOURCES.MAIN.JAR}-->
+<!--${JNLP.RESOURCES.JARS}-->
+        <j2se version="1.6+" java-vm-args="-Xmx128m"/>
+    </resources>
+    <application-desc main-class="${jnlp.main.class}">
+<!--${JNLP.APPLICATION.ARGS}-->
+    </application-desc>
+</jnlp>
